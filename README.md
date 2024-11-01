@@ -3,6 +3,14 @@
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
+### About HouseShare;
+
+The app(*HouseShare* ) you will create during the course
+of this book plans to solve a few housing problems; it will be a very primitive version
+of any popular property search application.  It will have some
+rudimentary features like listings, creating an entry, geolocating a property, and a few
+more.
+The App is used as a project for React Native training
 
 1. Install dependencies
 
