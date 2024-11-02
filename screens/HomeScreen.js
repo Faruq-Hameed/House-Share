@@ -11,7 +11,7 @@ export default class HomeScreen extends Component {
       <View style={styles.mainContainer}>
         {/* <Text> Home Screen</Text>
         <Button title="Go to About Page" onPress={()=> this.props.navigation.navigate('About')}/> */}
-        <TouchableHighlight style={styles.topContainer} onPress={()=>this.props.navigate('HomeListScreen')}>
+        <TouchableHighlight style={styles.topContainer} onPress={()=>navigate('HomeList')}>
           <Image
             style={styles.homeBanner}
             source={require("../assets/images/house.png")}

@@ -16,7 +16,7 @@ export default class AppNavigator extends Component {
           //Any options passed here will apply globally to all screens in the Stack.Navigator.
           headerTitleAlign: "center", //Ensures that the title is centered on all screens.
           headerStyle: {
-            backgroundColor: "#48BBEC'", // Sets the header background color to blue
+            backgroundColor: "#48BBEC", // Sets the header background color to blue
           },
           headerTintColor: "#fff", // Sets the color of the back button and title to white
           headerTitleStyle: {
