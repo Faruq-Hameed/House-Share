@@ -4,9 +4,7 @@ import { StyleSheet, Text, View, Image } from "react-native";
 export default HomeItem = (props) => {
   return (
     <View style={styles.row}>
-      <View>
-        <Image source={{ uri: props.images }} style={styles.thumbnail} />
-      </View>
+      <Image source={{ uri: props.images }} style={styles.thumbnail} />
       <View style={styles.rightBox}>
         <Text style={styles.name}> {props.name}</Text>
         <Text>{props.address}</Text>
