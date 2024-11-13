@@ -27,14 +27,14 @@ export default class AppNavigator extends Component {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: "Welcome" }}
+          options={{ title: "ABIKE" }}
         />
         <Stack.Screen name="About" component={AboutScreen} />
 
         <Stack.Screen
           name="HomeList"
           component={HomeListScreen}
-          options={{ title: "Home List" }}
+          options={{ title: "I ❤️❤️❤️ABIKE UUUUU...." }}
         />
       </Stack.Navigator>
     );

@@ -1,18 +1,22 @@
 import React, { Component } from "react";
-import { View, Button,Text, StyleSheet } from "react-native";
+import { View, Button, Text, StyleSheet } from "react-native";
 
-export default class AboutScreen extends Component {
-  render() {
-    return (
-      <View style={styles.about}>
-        <Text> About screen</Text>
-        <Button title="Go back" onPress={() => this.props.navigation.goBack()} />
-        <Button title="Go Home" onPress={() => this.props.navigation.navigate('Home')} />
-        <Button title="Go to first page" onPress={() => this.props.navigation.popToTop()} />
-      </View>
-    );
-  }
-}
+const AboutScreen = ({navigation}) => {
+  return (
+    <View style={styles.about}>
+      <Text> About screen</Text>
+      <Button title="Go back" onPress={() => navigation.goBack()} />
+      <Button
+        title="Go Home"
+        onPress={() => navigation.navigate("Home")}
+      />
+      <Button
+        title="Go to first page"
+        onPress={() => navigation.popToTop()}
+      />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   about: {
@@ -21,6 +25,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+export default AboutScreen;
 
 /**
  * navigation.navigate('RouteName') pushes a new route to the native stack navigator 

@@ -1,15 +1,15 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-
+import {FadeInView} from './FadeInView'
 export default HomeItem = (props) => {
   return (
-    <View style={styles.row}>
+    <FadeInView style={styles.row} >
       <Image source={{ uri: props.images }} style={styles.thumbnail} />
       <View style={styles.rightBox}>
         <Text style={styles.name}> {props.name}</Text>
         <Text>{props.address}</Text>
       </View>
-    </View>
+    </FadeInView>
   );
 };
 
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5FCFF",
     borderWidth: 1,
     borderColor: "#d6d7da",
+    paddingLeft: 1,
   },
   thumbnail: {
     width: 53,

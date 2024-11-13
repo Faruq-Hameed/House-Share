@@ -3,6 +3,7 @@ import { Text, View, FlatList } from "react-native";
 import HomeItem from "../components/HouseItem";
 import { MOCK_DATA } from "../db/mockData";
 
+
 export default HomeListScreen = () => {
   return (
     <FlatList

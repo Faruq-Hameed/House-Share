@@ -1,17 +1,28 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, Button, Image,TouchableHighlight } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  Image,
+  TouchableHighlight,
+} from "react-native";
 
-export default class HomeScreen extends Component {
-  render() {
-    const { navigate } = this.props.navigation;
+const HomeScreen = ({navigation}) => {
 
     return (
-
       // <View style={styles.home}>
       <View style={styles.mainContainer}>
-        {/* <Text> Home Screen</Text>
-        <Button title="Go to About Page" onPress={()=> this.props.navigation.navigate('About')}/> */}
-        <TouchableHighlight style={styles.topContainer} onPress={()=>navigate('HomeList')}>
+        {/* {
+          <Button
+            title="Go to ScrollView Page"
+            onPress={() => this.props.navigation.navigate("ScrollView")}
+          />
+        } */}
+        <TouchableHighlight
+          style={styles.topContainer}
+          onPress={() => navigation.navigate("HomeList")}
+        >
           <Image
             style={styles.homeBanner}
             source={require("../assets/images/house.png")}
@@ -21,7 +32,6 @@ export default class HomeScreen extends Component {
         <View style={styles.bottomContainer} />
       </View>
     );
-  }
 }
 const styles = StyleSheet.create({
   home: {
@@ -51,3 +61,5 @@ const styles = StyleSheet.create({
     height: undefined,
   },
 });
+
+export default HomeScreen
