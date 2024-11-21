@@ -11,14 +11,7 @@ export default HomeItem = (props) => {
       </View>
     </FadeInView>
   );
-    <FadeInView style={styles.row} >
-      <Image source={{ uri: props.images }} style={styles.thumbnail} />
-      <View style={styles.rightBox}>
-        <Text style={styles.name}> {props.name}</Text>
-        <Text>{props.address}</Text>
-      </View>
-    </FadeInView>
-  );
+  
 };
 
 const styles = StyleSheet.create({
