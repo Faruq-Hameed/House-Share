@@ -11,7 +11,6 @@ export default HomeItem = (props) => {
       </View>
     </FadeInView>
   );
-  
 };
 
 const styles = StyleSheet.create({
